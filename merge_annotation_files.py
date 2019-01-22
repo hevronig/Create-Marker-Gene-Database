@@ -1,5 +1,4 @@
-#!/bin/python3
-
+#!/bin/env/python
 
 import sys
 import pandas as pd
@@ -9,7 +8,7 @@ file2 = sys.argv[2] #.entry_name.tsv
 file3 = sys.argv[3] #.tab
 filename = sys.argv[4] #.annotation.tsv
 
-df1 = pd.read_csv(file1, sep='\t', names=['md5','name'])
+df1 = pd.read_csv(file1, sep='\t')
 
 df2 = pd.read_csv(file2, sep='\t', names=['name','Entry name'])
 
