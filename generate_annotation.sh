@@ -28,8 +28,8 @@ python3 merge_annotation_files.py $MD5HEADER $ENTRYNAME $TAB $ANNOTATION
 echo Annotation file saved as $ANNOTATION
 
 echo Removing temporary files
-rm $MD5HEADER
-rm $ENTRYNAME
+rm -f $MD5HEADER
+rm -f $ENTRYNAME
 
 echo Done!
 ## EOF
